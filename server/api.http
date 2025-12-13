@@ -1,0 +1,19 @@
+### Prueba de Registro
+POST http://localhost:4000/api/auth/register
+Content-Type: application/json
+
+//JSON que enviamos
+{
+  "email": "prueba@test.com",
+  "password": "miPasswordSeguro123",
+  "name": "Estudiante React"
+}
+
+### Prueba de Login (NUEVA)
+POST http://localhost:4000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "prueba@test.com",
+  "password": "miPasswordSeguro123"
+}
