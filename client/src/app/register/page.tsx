@@ -8,12 +8,12 @@ export default function RegisterPage() {
     const router = useRouter();
     const [error, setError] = useState(""); // Solo guardamos el error, nada más.
 
-    // 1. UNA SOLA FUNCIÓN para todo. Se ejecuta al dar Submit.
+   
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setError("");
 
-        // MAGIA AQUÍ: Capturamos todos los datos del formulario de golpe
+        
         const formData = new FormData(e.currentTarget);
 
         // Convertimos los datos a un objeto simple JSON: { name: "...", email: "...", password: "..." }
@@ -49,7 +49,7 @@ export default function RegisterPage() {
                     <div>
                         <label className="block text-gray-400 mb-1">Nombre</label>
                         <input
-                            name="name" // IMPORTANTE: Este name es la clave del JSON
+                            name="name" 
                             type="text"
                             className="w-full p-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                             placeholder="Tu nombre"
