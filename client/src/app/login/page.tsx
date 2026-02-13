@@ -36,7 +36,7 @@ export default function LoginPage() {
             if (res.ok) {
                 const data = await res.json();
 
-                // ¡AQUÍ ESTÁ LA MAGIA!
+                
                 // Guardamos el token y el usuario en el navegador
                 localStorage.setItem("token", data.token);
                 localStorage.setItem("user", JSON.stringify(data.user));
